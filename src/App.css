@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Responsive Styles for Project Section */
 @media (min-width: 768px) {
     .project_card {
@@ -89,3 +90,96 @@
     position: relative; /* Position relative to keep content above the overlay */
     z-index: 2; /* Ensure content is above the overlay */
   }
+=======
+/* Responsive Styles for Project Section */
+@media (min-width: 768px) {
+    .project_card {
+      flex-direction: row; /* Change to row layout on medium screens and above */
+    }
+  
+    .project_card > div {
+      flex: 1; /* Allow the image and content to grow equally */
+    }
+  
+    .project_card .project_content {
+      padding: 2rem; /* More padding on larger screens */
+      display: flex; /* Use flexbox for content layout */
+      flex-direction: column; /* Column layout */
+      justify-content: space-between; /* Space between title, description, and button */
+      height: 100%; /* Full height to fill the card */
+    }
+  
+    .project_card .project_heading {
+      font-size: 2rem; /* Larger font size for title */
+      margin-bottom: 0.5rem; /* Space below the title */
+    }
+  
+    .project_card .project_subheading {
+      font-size: 1.125rem; /* Larger font size for description */
+      margin-bottom: 1rem; /* Space below the description */
+    }
+  
+    .btn {
+      padding: 0.5rem 1rem; /* More padding for buttons */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .project_card {
+      flex-direction: column; /* Column layout on small screens */
+    }
+  
+    .project_card .project_content {
+      padding: 1rem; /* Less padding on smaller screens */
+      display: flex; /* Use flexbox for content layout */
+      flex-direction: column; /* Column layout */
+      justify-content: space-between; /* Space between title, description, and button */
+      height: 100%; /* Full height to fill the card */
+    }
+  
+    .project_card .project_heading {
+      font-size: 1.5rem; /* Smaller font size for title */
+      margin-bottom: 0.5rem; /* Space below the title */
+    }
+  
+    .project_card .project_subheading {
+      font-size: 1rem; /* Smaller font size for description */
+      margin-bottom: 1rem; /* Space below the description */
+    }
+  
+    .btn {
+      padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+    }
+  }
+  
+  .project_card {
+    position: relative; /* Position relative for the pseudo-element */
+    overflow: hidden; /* Hide overflow to keep the effect within the card */
+    transition: transform 0.3s ease; /* Transition for scaling */
+  }
+  
+  .project_card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  .project_card::before {
+    content: ""; /* Pseudo-element for the overlay effect */
+    position: absolute; /* Position absolute to cover the card */
+    top: 0; /* Align to the top */
+    left: -100%; /* Start off-screen to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(229, 62, 62, 0.8); /* Color of the overlay */
+    transition: left 0.3s ease; /* Transition for the movement */
+    z-index: 1; /* Behind the content */
+  }
+  
+  .project_card:hover::before {
+    left: 0; /* Move the overlay into view on hover */
+  }
+  
+  .project_content {
+    position: relative; /* Position relative to keep content above the overlay */
+    z-index: 2; /* Ensure content is above the overlay */
+  }
+>>>>>>> ae3de767c2f5a63faaee476ac4db6f9ac3e980ab
