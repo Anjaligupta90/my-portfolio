@@ -1,20 +1,56 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+  const [isSubmitted, setIsSubmitted] = useState(false); // State to track submission
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Here you can add any action you want to perform on submit
+    // For example, you can log the form data to the console
+    console.log('Form submitted:', formData);
+
+    // Show confirmation message
+    setIsSubmitted(true);
+
+    // Reset the form
+    setFormData({ name: '', email: '', subject: '', message: '' });
+    
+    // Hide the confirmation message after a few seconds
+    setTimeout(() => {
+      setIsSubmitted(false);
+    }, 3000);
+  };
+
   return (
     <div className="contectus_form_container bg-gray-200 my-16" id="contact">
       <div className="container mx-auto p-8">
         <h1 className="contactus_heading text-5xl text-red-600 font-bold">Contact Me</h1>
         <h3 className="contactus_subheading text-3xl text-gray-600 font-medium">Questions, Thoughts, or Just want to say hello?</h3>
         <div className="contact_formcontainer mt-8 flex justify-center">
-          <form action="" className="form flex flex-col gap-6 w-full max-w-lg">
-            <input type="text" name="name" placeholder="Enter your name..." className="formfield p-4 border rounded" />
-            <input type="email" name="email" placeholder="Enter your email..." className="formfield p-4 border rounded" />
-            <input type="text" name="subject" placeholder="Enter your subject..." className="formfield p-4 border rounded" />
-            <textarea name="message" rows="5" placeholder="Enter your message..." className="formfield p-4 border rounded"></textarea>
-            <button className="btn bg-red-500 text-white py-2 px-4 rounded">Send Message <i className="submit_icon fa-solid fa-paper-plane"></i></button>
+          <form onSubmit={handleSubmit} className="form flex flex-col gap-6 w-full max-w-lg">
+            <input type="text" name="name" placeholder="Enter your name..." value={formData.name} onChange={handleChange} className="formfield p-4 border rounded" required />
+            <input type="email" name="email" placeholder="Enter your email..." value={formData.email} onChange={handleChange} className="formfield p-4 border rounded" required />
+            <input type="text" name="subject" placeholder="Enter your subject..." value={formData.subject} onChange={handleChange} className="formfield p-4 border rounded" required />
+            <textarea name="message" rows="5" placeholder="Enter your message..." value={formData.message} onChange={handleChange} className="formfield p-4 border rounded" required></textarea>
+            <button type="submit" className="btn bg-red-500 text-white py-2 px-4 rounded">Send Message <i className="submit_icon fa-solid fa-paper-plane"></i></button>
           </form>
         </div>
+        {isSubmitted && (
+          <div className="mt-4 text-green-600 font-semibold">
+            Your message has been sent successfully!
+          </div>
+        )}
       </div>
     </div>
   );

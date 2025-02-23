@@ -15,9 +15,10 @@ const SkillsSection = () => {
       <div className="skills_container_left w-full md:w-1/2 p-8">
         <h2 className="skills_heading text-5xl text-red-600">Me and My Tech Stack</h2>
         <div className="skills_subheading mt-4 font-medium">
-          <p>Hi Everyone! My name is John Doe. I am a Full Stack Web Developer with over 3 years of experience. Currently, I am working with a budding startup in the USA and as a full-time freelancer. I specialize in Next.js and creating beautiful UI/UX.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloremque aspernatur, maiores voluptatum minus laudantium? Perspiciatis accusamus minima porro dolores necessitatibus, magni dolorem et qui veniam nulla sequi molestiae maxime.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis quidem quos ullam veritatis voluptates tenetur qui ipsa nulla culpa itaque?</p>
+          <p>Hi Everyone!
+          My name is Anjali Kumari, and I am an enthusiastic Full Stack Web Developer with a strong foundation in web development technologies. I am passionate about creating dynamic and responsive web applications that provide exceptional user experiences.</p>
+          <p>I have hands-on experience with HTML, CSS, and Tailwind CSS for crafting beautiful and user-friendly interfaces. I specialize in React.js for frontend development, allowing me to build interactive and engaging web applications.</p>
+          <p>On the backend, I am proficient in Node.js and MongoDB, which enables me to develop robust server-side applications and manage databases effectively. My skill set includes:</p>
         </div>
       </div>
       <div className="skills_container_right w-full md:w-1/2 flex flex-wrap justify-evenly gap-4 p-8">
