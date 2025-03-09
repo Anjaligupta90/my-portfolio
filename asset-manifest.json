@@ -1,24 +1,31 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.a0ec15e5.css",
-    "main.js": "/my-portfolio/static/js/main.6ade2437.js",
+    "main.css": "/my-portfolio/static/css/main.1cb9367a.css",
+    "main.js": "/my-portfolio/static/js/main.dd844df7.js",
+    "static/media/logoimage.png": "/my-portfolio/static/media/logoimage.8227d3a8d44851047101.png",
     "static/media/p3.png": "/my-portfolio/static/media/p3.ef36ed5ae28757aa1d34.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/my-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/p1.png": "/my-portfolio/static/media/p1.b449138933e991595f4e.png",
     "static/media/p2.png": "/my-portfolio/static/media/p2.26a4444c80c7e4664668.png",
     "static/media/p5.png": "/my-portfolio/static/media/p5.d152fc02277259587930.png",
+    "static/media/fontawesome-webfont.eot": "/my-portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/my-portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/my-portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/my-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/Tailwind.png": "/my-portfolio/static/media/Tailwind.9c2e5bcf4f97d73e438e.png",
     "static/media/nodejs.jpg": "/my-portfolio/static/media/nodejs.5fd62495aef7c44c59fb.jpg",
     "static/media/user.jpg": "/my-portfolio/static/media/user.fdecaa6adf6b319ea28e.jpg",
     "static/media/CSS.png": "/my-portfolio/static/media/CSS.1a57e67ac1fd2ea84d64.png",
     "static/media/React.png": "/my-portfolio/static/media/React.53dc6bc56f1c8aa7f441.png",
+    "static/media/WhatsApp Image 2025-03-09 at 18.00.53_0cdfd569.jpg": "/my-portfolio/static/media/WhatsApp Image 2025-03-09 at 18.00.53_0cdfd569.91b488350f59bf24066f.jpg",
     "static/media/Next.svg": "/my-portfolio/static/media/Next.2e296d8e8f5b961cea3781c0d5fcfaf6.svg",
     "static/media/MongoDB.svg": "/my-portfolio/static/media/MongoDB.55003af2c629675b0af175687c6970fc.svg",
     "index.html": "/my-portfolio/index.html",
-    "main.a0ec15e5.css.map": "/my-portfolio/static/css/main.a0ec15e5.css.map",
-    "main.6ade2437.js.map": "/my-portfolio/static/js/main.6ade2437.js.map"
+    "main.1cb9367a.css.map": "/my-portfolio/static/css/main.1cb9367a.css.map",
+    "main.dd844df7.js.map": "/my-portfolio/static/js/main.dd844df7.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0ec15e5.css",
-    "static/js/main.6ade2437.js"
+    "static/css/main.1cb9367a.css",
+    "static/js/main.dd844df7.js"
   ]
 }
