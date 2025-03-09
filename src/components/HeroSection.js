@@ -27,13 +27,13 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="hero_section flex justify-evenly items-center my-16 gap-20 relative">
+    <div className="hero_section flex justify-evenly items-center my-16 gap-20 relative text-white">
 
-      <div className="absolute top-[280px] feded_text text-7xl text-gray-300">ANJALI GUPTA</div>
+      <div className="centername absolute top-[280px] feded_text text-7xl text-gray-300">ANJALI GUPTA</div>
 
       <div className="hero_left flex flex-col justify-center gap-8">
-        <div className="hero_heading text-4xl text-gray-800 font-semibold">Hi!! ANJALI</div>
-        <div className="hero_heading hero_subheading text-2xl">I am a <span className="role font-extrabold"></span></div>
+        <div className="hero_heading text-4xl text-green-800 font-semibold">Hi!! ANJALI</div>
+        <div className="hero_heading hero_subheading text-2xl">I am a <span className="role font-extrabold text-yellow-600"></span></div>
         <div className="hero_description text-lg w-[400px] font-medium">
           I am a Software Developer and here is my portfolio website. Here you will learn about my journey as a software developer.
         </div>
