@@ -1,5 +1,5 @@
 /* Responsive Styles for Project Section */
-@media (min-width: 500px) {
+@media (max-width: 768px) {
     .project_card {
       flex-direction: row; /* Change to row layout on medium screens and above */
     }
