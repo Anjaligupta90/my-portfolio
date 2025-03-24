@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FiMessageCircle } from "react-icons/fi";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -43,7 +44,7 @@ const ContactForm = () => {
             <input type="email" name="email" placeholder="Enter your email..." value={formData.email} onChange={handleChange} className="formfield p-4 border rounded" required />
             <input type="text" name="subject" placeholder="Enter your subject..." value={formData.subject} onChange={handleChange} className="formfield p-4 border rounded" required />
             <textarea name="message" rows="5" placeholder="Enter your message..." value={formData.message} onChange={handleChange} className="formfield p-4 border rounded" required></textarea>
-            <button type="submit" className="btn bg-red-500 text-white py-2 px-4 rounded">Send Message <i className="submit_icon fa-solid fa-paper-plane"></i></button>
+            <button type="submit" className="cnbtn bg-red-500 text-white py-2 px-4 rounded relative">Send Message <i className="submit_icon absolute left-[330px] top-[13px]"><FiMessageCircle /></i></button>
           </form>
         </div>
         {isSubmitted && (

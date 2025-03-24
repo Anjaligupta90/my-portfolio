@@ -1,54 +1,51 @@
 /* Responsive Styles for Project Section */
-@media (min-width: 500px) {
-    .project_card {
-      flex-direction: row; /* Change to row layout on medium screens and above */
-    }
-  
-    .project_card > div {
-      flex: 1; /* Allow the image and content to grow equally */
-    }
-  
-    .project_card .project_content {
-      padding: 2rem; /* More padding on larger screens */
-      display: flex; /* Use flexbox for content layout */
-      flex-direction: column; /* Column layout */
-      justify-content: space-between; /* Space between title, description, and button */
-      height: 100%; /* Full height to fill the card */
-    }
-  
-    .project_card .project_heading {
-      font-size: 2rem; /* Larger font size for title */
-      margin-bottom: 0.5rem; /* Space below the title */
-    }
-  
-    .project_card .project_subheading {
-      font-size: 1.125rem; /* Larger font size for description */
-      margin-bottom: 1rem; /* Space below the description */
-    }
-  
-    .btn {
-      padding: 0.5rem 1rem; /* More padding for buttons */
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .project_card {
-      flex-direction: column; /* Column layout on small screens */
-    }
-    
+
+  @media (max-width: 678px)
+   {
     .hero_section {
-      flex-direction: column; /* Column layout on small screens */
-      align-items: center;
-      width: 100%;
-      overflow: hidden;
-    }
-    .hero-left{
-      width: 100%;
-      height: 100%;
       display: flex;
-      justify-content: center;
+      justify-content: space-evenly;
       align-items: center;
+      margin: 4rem 0; /* Adjust margins as needed */
     }
+
+      .hero_section {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+
+      }
+    
+      .hero_left {
+        text-align: center; /* Center text on mobile */
+      }
+      .herobtn{
+        width: 100px;
+        align-items: center; /* Center align */
+      }
+    
+      .hero_description {
+        width: 100%; /* Make description more responsive */
+        white-space: normal; /* Allow wrapping */
+      }
+    
+      .hero_right {
+        position: relative;
+        width: 200px; /* Adjust size for mobile */
+        height: 200px; /* Adjust size for mobile */
+      }
+    
+      .role {
+        font-size: 1.5rem; /* Adjust font size for mobile */
+      }
+    
+      .hero_heading {
+        font-size: 2rem; /* Smaller heading */
+      }
+    
+      .hero_subheading{
+        width:100px;
+        font-size: 1.5rem; /* Smaller subheading */
+      }
     .user-image {
       margin-bottom: 1rem; /* Space below the image */
     }
@@ -69,27 +66,16 @@
       white-space: nowrap; /* Prevent wrapping */
       flex-wrap: nowrap; /* Prevent wrapping */
     }
-  
-    .project_card .project_content {
-      padding: 1rem; /* Less padding on smaller screens */
-      display: flex; /* Use flexbox for content layout */
-      flex-direction: column; /* Column layout */
-      justify-content: space-between; /* Space between title, description, and button */
-      height: 100%; /* Full height to fill the card */
-    }
-  
-    .project_card .project_heading {
-      font-size: 1.5rem; /* Smaller font size for title */
-      margin-bottom: 0.5rem; /* Space below the title */
-    }
-  
-    .project_card .project_subheading {
-      font-size: 1rem; /* Smaller font size for description */
-      margin-bottom: 1rem; /* Space below the description */
-    }
-  
-    .btn {
+
+    .cnbtn {
+      position: relative; /* Position relative for absolute positioning */
       padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+    }
+    .submit_icon{
+      font-size: 1.5rem; /* Adjust icon size */
+      position: absolute; /* Position absolute for icon */
+      top: 6px; /* Position icon at the top */
+      left: 330px; /* Position icon at the right */
     }
     #wrapper{
       flex-direction: column; /* Column layout on small screens */
@@ -97,39 +83,108 @@
       flex-wrap: nowrap; /* Prevent wrapping */
       align-items: center;
     }
-  }
-  
-  .project_card {
-    position: relative; /* Position relative for the pseudo-element */
-    overflow: hidden; /* Hide overflow to keep the effect within the card */
-    transition: transform 0.3s ease; /* Transition for scaling */
-  }
-  
-  .project_card:hover {
-    transform: scale(1.05); /* Scale up on hover */
-  }
-  
-  .project_card::before {
-    content: ""; /* Pseudo-element for the overlay effect */
-    position: absolute; /* Position absolute to cover the card */
-    top: 0; /* Align to the top */
-    left: -100%; /* Start off-screen to the left */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(194, 189, 189, 0.8); /* Color of the overlay */
-    transition: left 0.3s ease; /* Transition for the movement */
-    z-index: 1; /* Behind the content */
-  }
-  
-  .project_card:hover::before {
-    left: 0; /* Move the overlay into view on hover */
-  }
-  
-  .project_content {
-    position: relative; /* Position relative to keep content above the overlay */
-    z-index: 2; /* Ensure content is above the overlay */
+    .skills-subheading,p{
+      text-align: center;
+      font-size: 16px;
+      line-height: 1.5;
+      white-space: normal;
+      overflow: visible;
+    }
+    .skills_heading{
+      font:bold;
+      font-size: 1.5rem;
+      white-space: normal;
+    }
+    .contactus_subheading{
+      white-space: normal;
+      font-size: 1rem;
+    }
+    #cube{
+      position:absolute;
+      top:100px;
+    }
   }
 
+  @media (max-width: 600px) {
+    .project_card {
+      position: relative; /* Position relative for absolute positioning */
+      flex-direction: column; /* Stack on smaller screens */
+      height: auto;
+      width: auto;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .btn_group {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+        position: relative;
+      }
+  
+    .project_no {
+        top: auto;
+      right: 10px; /* Adjust position for smaller screens */
+      left: auto;
+    }
+    .icon{
+    font-size: 1.25rem; /* text-xl */
+    position: absolute;
+    top: 1.5rem; /* top-2 */ 
+    }
+    .project_subheading {
+        font-size: 0.700rem; /* text-sm */
+        white-space: normal;
+      }
+      .project_content {
+        position: absolute;
+        object-fit: cover;
+        top:40px;
+        color:white;
+        font-size: 0.600rem;
+        margin: auto;
+      }
+      .btn_group{
+        position: absolute;
+        margin:0;
+        padding:0;
+      }
+      .project_subheading {
+        font-size: 0.700rem; /* text-sm */
+        white-space: normal;
+      }
+    .icon{
+        font-size: 1.2rem; /* text-xl */
+    }
+    .cnbtn {
+      position: relative; /* Position relative for absolute positioning */
+      padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
+    }
+    .submit_icon{
+      font-size: 1.5rem; /* Adjust icon size */
+      position: absolute; /* Position absolute for icon */
+      top: 6px; /* Position icon at the top */
+      left: 80%; /* Position icon at the right */
+      transform: translateX(-80%);
+    }
+  }
+  
   #wrapper{
     background-image: url(./assets/WhatsApp\ Image\ 2025-03-09\ at\ 18.00.53_0cdfd569.jpg);
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;  /* To make sure it's above other content */
+  }
+
+  html,body{
+    width:100%;
+    overflow-x:hidden;
+  }
+  .herobtn{
+    box-shadow: 0 2px 20px rgba(26, 24, 24, 0.877); /* shadow-lg */
   }
