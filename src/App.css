@@ -1,7 +1,47 @@
 /* Responsive Styles for Project Section */
+<<<<<<< HEAD
 
   @media (max-width: 678px)
    {
+=======
+@media (max-width: 768px) {
+    .project_card {
+      flex-direction: row; /* Change to row layout on medium screens and above */
+    }
+  
+    .project_card > div {
+      flex: 1; /* Allow the image and content to grow equally */
+    }
+  
+    .project_card .project_content {
+      padding: 2rem; /* More padding on larger screens */
+      display: flex; /* Use flexbox for content layout */
+      flex-direction: column; /* Column layout */
+      justify-content: space-between; /* Space between title, description, and button */
+      height: 100%; /* Full height to fill the card */
+    }
+  
+    .project_card .project_heading {
+      font-size: 2rem; /* Larger font size for title */
+      margin-bottom: 0.5rem; /* Space below the title */
+    }
+  
+    .project_card .project_subheading {
+      font-size: 1.125rem; /* Larger font size for description */
+      margin-bottom: 1rem; /* Space below the description */
+    }
+  
+    .btn {
+      padding: 0.5rem 1rem; /* More padding for buttons */
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .project_card {
+      flex-direction: column; /* Column layout on small screens */
+    }
+    
+>>>>>>> ac4ca265bf7fff9d4c83f982547f7300a2e18aba
     .hero_section {
       display: flex;
       justify-content: space-evenly;
@@ -172,6 +212,7 @@
   #wrapper{
     background-image: url(./assets/WhatsApp\ Image\ 2025-03-09\ at\ 18.00.53_0cdfd569.jpg);
   }
+<<<<<<< HEAD
 
   .navbar {
     position: fixed;
@@ -188,3 +229,5 @@
   .herobtn{
     box-shadow: 0 2px 20px rgba(26, 24, 24, 0.877); /* shadow-lg */
   }
+=======
+>>>>>>> ac4ca265bf7fff9d4c83f982547f7300a2e18aba
