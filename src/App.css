@@ -1,233 +1,164 @@
-/* Responsive Styles for Project Section */
-<<<<<<< HEAD
+/* app.css */
 
-  @media (max-width: 678px)
-   {
-=======
-@media (max-width: 768px) {
-    .project_card {
-      flex-direction: row; /* Change to row layout on medium screens and above */
-    }
+/* General Styles */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
   
-    .project_card > div {
-      flex: 1; /* Allow the image and content to grow equally */
-    }
-  
-    .project_card .project_content {
-      padding: 2rem; /* More padding on larger screens */
-      display: flex; /* Use flexbox for content layout */
-      flex-direction: column; /* Column layout */
-      justify-content: space-between; /* Space between title, description, and button */
-      height: 100%; /* Full height to fill the card */
-    }
-  
-    .project_card .project_heading {
-      font-size: 2rem; /* Larger font size for title */
-      margin-bottom: 0.5rem; /* Space below the title */
-    }
-  
-    .project_card .project_subheading {
-      font-size: 1.125rem; /* Larger font size for description */
-      margin-bottom: 1rem; /* Space below the description */
-    }
-  
-    .btn {
-      padding: 0.5rem 1rem; /* More padding for buttons */
-    }
-  }
-  
-  @media (max-width: 500px) {
-    .project_card {
-      flex-direction: column; /* Column layout on small screens */
-    }
-    
->>>>>>> ac4ca265bf7fff9d4c83f982547f7300a2e18aba
-    .hero_section {
+}
+#wrapper{
+  background-image: url(../pexels-photo-949587\ \(1\).webp);
+}
+.contectus_form_container{
+  background-image: url(../pexels-photo-2523959.webp);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* To make sure it's above other content */
+}
+
+.herobtn {
+  box-shadow: 0 2px 20px rgba(26, 24, 24, 0.877); /* shadow-lg */
+}
+
+/* Responsive Styles for General Layout */
+@media (max-width: 700px) {
+  .hero_section {
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       margin: 4rem 0; /* Adjust margins as needed */
-    }
-
-      .hero_section {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-
-      }
-    
-      .hero_left {
-        text-align: center; /* Center text on mobile */
-      }
-      .herobtn{
-        width: 100px;
-        align-items: center; /* Center align */
-      }
-    
-      .hero_description {
-        width: 100%; /* Make description more responsive */
-        white-space: normal; /* Allow wrapping */
-      }
-    
-      .hero_right {
-        position: relative;
-        width: 200px; /* Adjust size for mobile */
-        height: 200px; /* Adjust size for mobile */
-      }
-    
-      .role {
-        font-size: 1.5rem; /* Adjust font size for mobile */
-      }
-    
-      .hero_heading {
-        font-size: 2rem; /* Smaller heading */
-      }
-    
-      .hero_subheading{
-        width:100px;
-        font-size: 1.5rem; /* Smaller subheading */
-      }
-    .user-image {
-      margin-bottom: 1rem; /* Space below the image */
-    }
-    .navbar{
-      flex-direction: column; /* Column layout on small screens */
+      flex-direction: column; /* Stack items vertically */
       align-items: center; /* Center items */
+  }
+
+  .hero_left {
+      text-align: center; /* Center text on mobile */
+  }
+
+  .herobtn {
+      width: 100px;
+      align-items: center; /* Center align */
+  }
+
+  .hero_description {
+      width: 100%; /* Make description more responsive */
+      white-space: normal; /* Allow wrapping */
+  }
+
+  .hero_right {
+      position: relative;
+      width: 200px; /* Adjust size for mobile */
+      height: 200px; /* Adjust size for mobile */
+  }
+
+  .role {
+      font-size: 1.5rem; /* Adjust font size for mobile */
+  }
+
+  .hero_heading {
+      font-size: 2rem; /* Smaller heading */
+  }
+
+  .hero_subheading {
+      width: 100px;
+      font-size: 1.5rem; /* Smaller subheading */
+  }
+
+  .user-image {
+      margin-bottom: 1rem; /* Space below the image */
+  }
+
+  .centername {
+      position: absolute;
+      top: 560px;
       white-space: nowrap; /* Prevent wrapping */
       flex-wrap: nowrap; /* Prevent wrapping */
-    }
-    .centername{
-        position: absolute;
-        top: 560px;
-        white-space: nowrap; /* Prevent wrapping */
-        flex-wrap: nowrap; /* Prevent wrapping */
-    }
-    .container{
+  }
+
+  .container {
       flex-direction: column; /* Column layout on small screens */
       white-space: nowrap; /* Prevent wrapping */
       flex-wrap: nowrap; /* Prevent wrapping */
-    }
+      width: 320px; /* Fixed width for mobile screens */
+      padding: 10px; /* Reduced padding for smaller screens */
+  }
 
-    .cnbtn {
+  .cnbtn {
       position: relative; /* Position relative for absolute positioning */
       padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
-    }
-    .submit_icon{
+  }
+
+  .submit_icon {
       font-size: 1.5rem; /* Adjust icon size */
       position: absolute; /* Position absolute for icon */
       top: 6px; /* Position icon at the top */
       left: 330px; /* Position icon at the right */
-    }
-    #wrapper{
+  }
+
+  #wrapper {
       flex-direction: column; /* Column layout on small screens */
       white-space: nowrap; /* Prevent wrapping */
       flex-wrap: nowrap; /* Prevent wrapping */
       align-items: center;
-    }
-    .skills-subheading,p{
+  }
+
+  .skills-subheading,
+  p {
       text-align: center;
       font-size: 16px;
       line-height: 1.5;
       white-space: normal;
       overflow: visible;
-    }
-    .skills_heading{
-      font:bold;
-      font-size: 1.5rem;
-      white-space: normal;
-    }
-    .contactus_subheading{
-      white-space: normal;
-      font-size: 1rem;
-    }
-    #cube{
-      position:absolute;
-      top:100px;
-    }
   }
 
-  @media (max-width: 600px) {
-    .project_card {
-      position: relative; /* Position relative for absolute positioning */
-      flex-direction: column; /* Stack on smaller screens */
-      height: auto;
-      width: auto;
-      text-overflow: ellipsis;
-      overflow: hidden;
-    }
+  .skills_heading {
+      font: bold;
+      font-size: 1.5rem;
+      white-space: normal;
+  }
 
-    .btn_group {
-        display: flex;
-        gap: 2rem;
-        margin-top: 1rem;
-        position: relative;
-      }
-  
-    .project_no {
-        top: auto;
-      right: 10px; /* Adjust position for smaller screens */
-      left: auto;
-    }
-    .icon{
-    font-size: 1.25rem; /* text-xl */
+  .contactus_subheading {
+      white-space: normal;
+      font-size: 1rem;
+  }
+
+  #zig{
+      position: absolute;
+      top: -10px;
+  }
+  #cube{
     position: absolute;
-    top: 1.5rem; /* top-2 */ 
-    }
-    .project_subheading {
-        font-size: 0.700rem; /* text-sm */
-        white-space: normal;
-      }
-      .project_content {
-        position: absolute;
-        object-fit: cover;
-        top:40px;
-        color:white;
-        font-size: 0.600rem;
-        margin: auto;
-      }
-      .btn_group{
-        position: absolute;
-        margin:0;
-        padding:0;
-      }
-      .project_subheading {
-        font-size: 0.700rem; /* text-sm */
-        white-space: normal;
-      }
-    .icon{
-        font-size: 1.2rem; /* text-xl */
-    }
-    .cnbtn {
-      position: relative; /* Position relative for absolute positioning */
-      padding: 0.5rem 1rem; /* Adjust button padding for smaller screens */
-    }
-    .submit_icon{
+    top: -10px;
+    left:160px;
+  }
+  #plus{
+    position: absolute;
+    left: 160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .btn_group {
+      display: flex;
+      gap: 1rem; /* Adjust gap for smaller screens */
+      margin-top: 1rem;
+      position: relative;
+  }
+
+  .submit_icon {
       font-size: 1.5rem; /* Adjust icon size */
       position: absolute; /* Position absolute for icon */
       top: 6px; /* Position icon at the top */
       left: 80%; /* Position icon at the right */
       transform: translateX(-80%);
-    }
   }
-  
-  #wrapper{
-    background-image: url(./assets/WhatsApp\ Image\ 2025-03-09\ at\ 18.00.53_0cdfd569.jpg);
-  }
-<<<<<<< HEAD
-
-  .navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;  /* To make sure it's above other content */
-  }
-
-  html,body{
-    width:100%;
-    overflow-x:hidden;
-  }
-  .herobtn{
-    box-shadow: 0 2px 20px rgba(26, 24, 24, 0.877); /* shadow-lg */
-  }
-=======
->>>>>>> ac4ca265bf7fff9d4c83f982547f7300a2e18aba
+ .navbar{
+   display: flex;
+  flex-direction :column;
+ }
+}

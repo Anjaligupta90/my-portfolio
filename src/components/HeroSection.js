@@ -31,9 +31,9 @@ const HeroSection = () => {
 
       {/* <div className="centername absolute top-[280px] feded_text text-7xl text-gray-300">ANJALI GUPTA</div> */}
 
-      <div className="hero_left flex flex-col justify-center gap-8">
+      <div className="hero_left flex flex-col justify-center gap-8 max-w-full">
         <div className="hero_heading text-4xl text-green-800 font-semibold">Hi!! ANJALI</div>
-        <div className=" hero_subheading text-2xl">I am a <span className="role font-extrabold text-yellow-600"></span></div>
+        <div className=" hero_subheading text-2xl">I am a <span className="role font-extrabold text-blue-600 text-5xl"></span></div>
         <div className="hero_description text-lg w-[400px] font-medium">
           I am a Software Developer and here is my portfolio website. Here you will learn about my journey as a software developer.
         </div>
@@ -49,10 +49,10 @@ const HeroSection = () => {
         <div>
           <img src={user} alt="User " className="userimage border-[8px] w-full h-full border-black"/>  
         </div>
-        <img src={circle} alt='circle' className='absolute bottom-[-10px] animate-bounce' id="icon" />
-        <img src={cube} alt='cube' className='absolute bottom-[240px] left-[230px] animate-bounce' />
-        <img src={zig} alt='zigzag' className='absolute bottom-[190px] left-[-10px] animate-bounce' />
-        <img src={plus} alt='plus' className='absolute bottom-[-10px] left-[220px] animate-bounce' />
+        <img src={circle} alt='circle' className='absolute bottom-[-10px] animate-bounce' id="circle" />
+        <img src={cube} alt='cube' className='absolute bottom-[240px] left-[230px] animate-bounce'id='cube' />
+        <img src={zig} alt='zigzag' className='absolute bottom-[190px] left-[-10px] animate-bounce'id='zig' />
+        <img src={plus} alt='plus' className='absolute bottom-[-10px] left-[220px] animate-bounce'id='plus' />
       </div>
 
     </div>
