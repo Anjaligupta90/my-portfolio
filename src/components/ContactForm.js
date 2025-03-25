@@ -34,7 +34,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contectus_form_container my-0 bg-blue-300" id="contact">
+    <div className="contectus_form_container my-0" id="contact" data-aos="fade-up">
       <div className="container mx-auto p-8">
         <h1 className="contactus_heading text-5xl text-red-600 font-bold">Contact Me</h1>
         <h3 className="contactus_subheading text-3xl text-gray-600 font-medium">Questions, Thoughts, or Just want to say hello?</h3>

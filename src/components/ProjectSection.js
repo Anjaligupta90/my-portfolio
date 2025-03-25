@@ -43,7 +43,7 @@ const ProjectSection = () => {
   ];
 
   return (
-    <div className="project_sect" id="projects">
+    <div className="project_sect" id="projects" data-aos="fade-up">
       <div className="page_header">Projects
       <div className="underline"></div>
       </div>

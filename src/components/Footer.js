@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <footer className=" bg-gray-800 text-white py-8">
       <div className="container mx-auto flex justify-between items-center font-bold">
-        <div className="footer_feded_text text-3xl">Anjali Gupta</div>
+        <div className="footer_feded_text text-3xl text-gray-300 opacity-70 drop-shadow-md py-4">Anjali Gupta</div>
         <div className="link_wrapper flex gap-4">
           <div><a href="#projects" className="hover:text-red-500">Projects</a></div>
           <div><a href="#skills" className="hover:text-red-500">Skills</a></div>

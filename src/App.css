@@ -4,13 +4,15 @@
 html, body {
   width: 100%;
   overflow-x: hidden;
-  
+  overflow-y: auto;
 }
 #wrapper{
   background-image: url(../pexels-photo-949587\ \(1\).webp);
+  background-attachment: fixed;
+  background-size: cover;
 }
 .contectus_form_container{
-  background-image: url(../pexels-photo-2523959.webp);
+  /* background-image: url(../pexels-photo-2523959.webp); */
 }
 
 .navbar {

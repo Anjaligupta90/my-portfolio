@@ -11,7 +11,7 @@ import tailwind from "../assets/stack-image/Tailwind.png";
 
 const SkillsSection = () => {
   return (
-    <div id="skills" className="skills_container flex flex-col md:flex-row my-16 text-white">
+    <div id="skills" className="skills_container flex flex-col md:flex-row my-16 text-white" data-aos="fade-up">
       <div className="skills_container_left w-full md:w-1/2 p-8">
         <h2 className="skills_heading text-5xl text-red-600">Me and My Tech Stack</h2>
         <div className="skills_subheading mt-4 font-medium">
