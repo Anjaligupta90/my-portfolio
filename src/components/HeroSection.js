@@ -27,7 +27,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="hero_section flex justify-evenly items-center my-16 gap-20 relative text-white  pt-20 md:pt-32 lg:pt-32 xl:pt-32">
+    <div className="hero_section flex justify-evenly items-center my-16 gap-20 relative text-white  pt-20 md:pt-32 lg:pt-32 xl:pt-32" data-aos="zoom-in">
 
       {/* <div className="centername absolute top-[280px] feded_text text-7xl text-gray-300">ANJALI GUPTA</div> */}
 
