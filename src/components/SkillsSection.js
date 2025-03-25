@@ -14,7 +14,7 @@ const SkillsSection = () => {
     <div id="skills" className="skills_container flex flex-col md:flex-row my-16 text-white" data-aos="fade-up">
       <div className="skills_container_left w-full md:w-1/2 p-8">
         <h2 className="skills_heading text-5xl text-red-600">Me and My Tech Stack</h2>
-        <div className="skills_subheading mt-4 font-medium">
+        <div className="skills_subheading mt-4 font-medium" data-aos="fade-right">
           <p>Hi Everyone!
           My name is Anjali Kumari, and I am an enthusiastic Full Stack Web Developer with a strong foundation in web development technologies. I am passionate about creating dynamic and responsive web applications that provide exceptional user experiences.</p>
           <p>I have hands-on experience with HTML, CSS, and Tailwind CSS for crafting beautiful and user-friendly interfaces. I specialize in React.js for frontend development, allowing me to build interactive and engaging web applications.</p>
@@ -22,7 +22,7 @@ const SkillsSection = () => {
         </div>
       </div>
       <div className="skills_container_right w-full md:w-1/2 flex flex-wrap justify-evenly gap-4 p-8">
-        <div className="grid grid-cols-3 gap-4 w-full animate-pulse" zoom-in>
+        <div className="grid grid-cols-3 gap-4 w-full" data-aos="fade-left">
           <img src={html} alt="HTML" className="skills_logo w-16 h-16 object-contain" />
           <img src={css} alt="CSS" className="skills_logo w-16 h-16 object-contain" />
           <img src={js} alt="JavaScript" className="skills_logo w-16 h-16 object-contain" />
