@@ -49,7 +49,7 @@ const ProjectSection = () => {
       </div>
       <div className="project_container">
         {projects.map((project, index) => (
-          <div className="project_card" key={project.id}>
+          <div className="project_card" key={project.id} zoom-in>
             <div className="proimg" style={{ backgroundImage: `url(${project.image})` }}></div>
             <div className={`project_no ${index % 2 === 0 ? 'right-[520px]' : 'left-[520px]'} top-4`}>
               {String(project.id).padStart(2, '0')}
