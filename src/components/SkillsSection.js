@@ -22,7 +22,7 @@ const SkillsSection = () => {
         </div>
       </div>
       <div className="skills_container_right w-full md:w-1/2 flex flex-wrap justify-evenly gap-4 p-8">
-        <div className="grid grid-cols-3 gap-4 w-full animate-pulse">
+        <div className="grid grid-cols-3 gap-4 w-full animate-pulse" zoom-in>
           <img src={html} alt="HTML" className="skills_logo w-16 h-16 object-contain" />
           <img src={css} alt="CSS" className="skills_logo w-16 h-16 object-contain" />
           <img src={js} alt="JavaScript" className="skills_logo w-16 h-16 object-contain" />
